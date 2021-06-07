@@ -1,6 +1,18 @@
-.App {
-  text-align: center;
+body {
+  background: #000000;
+  overflow: hidden;
 }
+
+*::-webkit-scrollbar {
+  display:none
+}
+
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
 
 .App-logo {
   height: 40vmin;
@@ -13,20 +25,108 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+
+
 
 .App-link {
   color: #61dafb;
 }
+
+.NavbarFixedDiv {
+  display: flex;
+  padding-left: 5px;
+  top:0;
+  position:fixed;
+  flex-direction: row;
+  height:70px;
+  background-color: #f1dfd1;
+  background-image: linear-gradient(0deg, #f1dfd1 20%, #f6f0ea 74%);
+  z-index: 5;
+  width:100%
+}
+
+.NavbarFixedDivPhone {
+  display: flex;
+  padding-left: 5px;
+  top:0;
+  position:fixed;
+  flex-direction: row;
+  height:50px;
+  z-index: 5;
+  width:100vw;
+  background:black
+}
+
+
+.Navlinks {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-self:center;
+  position: absolute;
+  left:35%;
+  width:30%
+}
+
+.NavlinksPhone {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-self:center;
+  width:100%;
+}
+
+.Navtext {
+  margin:0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.NavtextUnderlined {
+  margin:0;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+.NavtextPhone {
+  margin:0;
+  font-weight: bold;
+  color:white
+}
+
+.NavtextUnderlinedPhone {
+  margin:0;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  color:white;
+}
+
+
+
+.animatedText{
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  transition: 0.05s ease-in-out;
+}
+
+.animatedText:hover{
+  color: #61DBFB;
+  font-size: 49px;
+  /* transition: font-size 0.3s ease; */
+};
+
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +136,5 @@
     transform: rotate(360deg);
   }
 }
+
+
