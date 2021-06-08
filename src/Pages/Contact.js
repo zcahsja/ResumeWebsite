@@ -50,14 +50,14 @@ function Contact() {
     function submitButton() {
         if (message === '' || email === '' || name === '') {
             return (
-                <div css={styles.disabledSubmitButton}>
+                <div onClick={() => handleSubmit()} css={styles.disabledSubmitButton}>
                     <p css={styles.submitText}>Submit</p>
                 </div>
             )
         }
         else {
             return (
-                <div css={styles.submitButton}>
+                <div onClick={() => handleSubmit()} css={styles.submitButton}>
                     <p css={styles.submitText}>Submit</p>
                 </div>
             )
