@@ -120,7 +120,7 @@ const styles = {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-            minHeight: 550
+            minHeight: [400, 550, 550, 550]
 
             // zIndex: 50,
             // marginBottom: [60, 80, 80, 80],

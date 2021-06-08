@@ -132,7 +132,6 @@ const styles = {
             position: 'absolute',
             left: '5%',
             top: '17%',
-            background: 'black',
             flexDirection: 'column',
             minHeight: 400
         })

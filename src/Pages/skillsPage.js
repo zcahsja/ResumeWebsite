@@ -287,7 +287,7 @@ const styles = {
     skillsTitlePhone: (height) => css(
         mq({
             color: 'white',
-            fontSize: '5vh',
+            fontSize: '4.5vh',
             fontWeight: 'bold',
             margin: 0
         }
